@@ -1,0 +1,12 @@
+<ion-view title="Categories">
+    <ion-nav-bar class="bar-stable">
+        <h1 class="title">CATEGORIES</h1>
+  </ion-nav-bar>
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="category in categories" href="#/lists/{{category.id}}">
+                {{category.category_name}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
